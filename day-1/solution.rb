@@ -1,7 +1,8 @@
 # http://adventofcode.com/day/1
 class DayOne
   def initialize
-    file = File.open(File.expand_path('../input.txt', __FILE__), 'rb')
+    file = File.open("#{File.expand_path(File.dirname(__FILE__))}/input.txt",
+                     'r')
     @contents = file.read.strip.split(//)
     file.close
   end
