@@ -1,4 +1,4 @@
-require File.open(File.expand_path('../../../day-1/solution.rb', __FILE__), 'r')
+require "#{File.expand_path(File.dirname(__FILE__))}/../../day-1/solution.rb"
 
 RSpec.describe DayOne, '#solution_one' do
   it 'returns the floor santa should take' do
